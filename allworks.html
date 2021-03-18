@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Grunt CFD</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: 'dc';
+            src: url('../fonts/D-DINCondensed.woff2') format('woff2'),
+                url('../fonts/D-DINCondensed.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'db';
+            src: url('../fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+                url('../fonts/D-DINCondensed-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        /* FONT FACE - font-display: fallback; */
+        @font-face {
+            font-family: 'pth';
+            src: url('../fonts/ProximaNova-Thin.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: 'pl';
+            src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'ps';
+            src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Semibold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'pb';
+            src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'peb';
+            src: url('../fonts/ProximaNovaA-Extrabld.woff2') format('woff2'),
+                url('../fonts/ProximaNovaA-Extrabld.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'pr';
+            src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+    </style>
+
+<header>
+    <div class="header__logo">
+        <a href="./index.html"><img src="img/Asset 1.svg" alt="logo" class="gbox-logo"></a>
+        <h1>Gbox</h1>
+        <a href="">
+            <img src="img/001-facebook.svg" alt="fblogo" class="fblogo">
+        </a>
+        <div class="nav">
+            <span></span>
+        </div>
+    </div>
+    <div class="header__under">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__menu-about">
+                    <a href="./about.html" class="menu-text about"> about</a>
+                </div>
+                <div class="header__menu-options">
+                   
+                    <a href="./studio.html" class="menu-text studio">Studio</a>
+                    <a href="./rental.html" class="menu-text rental">Rental</a>
+                    <a href="./cafe.html" class="menu-text cafe">Cafe</a>
+                    <a href="./allworks.html" class="menu-text work">Work</a>
+                    
+                </div>
+                <div class="header__menu-contact">
+                    <a href="./contact.html" class="menu-text contact">contact</a>
+                </div>
+
+
+            </div>
+
+            <img src="img/long-line.png" alt="">
+
+        </div>
+    </div>
+    
+
+
+</header>
+<!-- ============================================ -->
+    <!--                      nav  bar                    -->
+    <!-- ============================================ -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__content">
+                <a href="" class="menu-text">about</a>
+                <a href="" class="menu-text">Rental</a>
+                <a href="./studio.html" class="menu-text">Studio</a>
+                <a href="./cafe.html" class="menu-text">Cafe</a>
+                <a href="./allworks.html" class="menu-text">Work</a>
+                <a href="./" class="menu-text">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------------------ -->
+    <!--                    main               -->
+    <!-- ------------------------------------ -->
+    <main>
+
+        <!-- ====================================== -->
+        <!--                       all works        -->
+        <!-- ====================================== -->
+        <section class="work">
+            <div class="container">
+                <div class="project__menu">
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#film">film</a></li>
+                        <li><a href="#image">image</a></li>
+                    </ul>
+                </div>
+                <div class="project__row row-1">
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic1.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item  ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic2.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span> <br>
+                                Director: <span>Peter Zech</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic3.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__row row-2">
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href=""><img src="img/home-pic4.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic5.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span> <br>
+                                Director: <span>Peter Zech</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic3.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__row row-3">
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic6.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic7.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span> <br>
+                                Director: <span>Peter Zech</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__row-item ">
+                        <div class="project-img">
+                            <a href="./project.html"><img src="img/home-pic8.jpg" alt=""></a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title title-3">project 01</h3>
+                            <p class="project-desc ">
+                                Clients: <span>Cif</span> <br>
+                                Photographer: <span>Eric Huynh</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+
+
+                    <div class="right-text">
+                        <p class="pr14px">if you want booking studio</p>
+                    </div>
+                    <div class="book-btn">
+
+                        <div class="booknow">
+                            <a href="">book now</a>
+                        </div>
+                    </div>
+                    <div class="more-btn">
+                        <a href="">More</a>
+                        <img src="img/004-down-arrow.svg" alt="">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!--                                page bottom white                  -->
+        <!-- ================================================================= -->
+        <section class="pagebtm1 allwork pagebtm">
+            <div class="container">
+                <!--  <div class="allwork__btn">
+                    <a href="" class="pagebtm1__btn">all works </a>
+                    <div class="downarrow"><img src="img/004-down-arrow.svg" alt=""></div>
+
+                </div> -->
+                <div class="pagebtm1__line">
+                    <img src="img/long-line.png" alt="">
+                </div>
+                <div class="pagebtm1__content btm-divide">
+                    <div class="pagebtm1__content-left btm-content">
+                        <p class="email">
+                            <br>
+                            email <br>
+                            info@goldenboxstudios.com <br>
+                        </p>
+                        <p class="tel">
+                            tel <span>+84 979 872 809</span>
+                        </p>
+                    </div>
+                    <div class="pagebtm1__content-right btm-content">
+                        <p>
+                            <br>
+                            if you have any questions <br>
+                            comments or <br>
+                            suggestion, feel free to email <br>
+                            us
+                            <br>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================================================================= -->
+        <!--                                page bottom yellow                 -->
+        <!-- ================================================================= -->
+        <section class="pagebtm2 pagebtm">
+            <div class="container">
+                <div class="pagebtm2__content btm-divide">
+                    <div class="pagebtm2__content-left btm-content">
+                        <p>
+
+                            address <br>
+                            04 bau cat district tan binh <br>
+                            ho chi minh city <br>
+                        </p>
+                    </div>
+                    <div class="pagebtm2__content-right btm-content">
+
+                        <div class="half-left">
+                            <form action="">
+                                <div class="name form-item">
+                                    <label for="name">Your Name</label> <br>
+                                    <input type="text" name="name" id="name">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="phone form-item">
+                                    <label for="phone">Phone</label> <br>
+                                    <input type="number" name="phone">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="email form-item">
+                                    <label for="email">Email</label> <br>
+                                    <input type="text" name="email">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="half-right">
+                            <form action="">
+                                <div class="subject form-item">
+                                    <label for="subject">Subject</label> <br>
+                                    <input type="text" name="subject">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="message form-item">
+                                    <label for="message">Message</label> <br>
+                                    <textarea name="message" id="" cols="" rows="3"> </textarea>
+                                    <img src="img/short-line.png" alt="" class="line1 linethin" >
+                                    <img src="img/short-line.png" alt="" class="line2 linethin">
+                                </div>
+                            </form>
+                            <div class="form-btn">
+                                <a href="javascript:void(0)" class="btn">Send</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <a href="" class="uparrow"><img src="img/002-up-arrow.svg" alt=""></a>
+                <p>2018 Gbox studio. all rights reserved</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.rental{
+   .container{
+       display: flex;
+       .rental__left{
+           width: 270px;
+           height: 650px;
+           margin-top: 2px;
+           background: $grey-cl;
+           .number{
+               margin: 70px 50px 30px 20px;
+           }
+           .text-content{
+               margin-left: 20px;
+               h2,p{
+                   color: $white-cl;
+               }
+               h2{
+                   margin-bottom: 15px;
+               }
+               .dimen{
+                   line-height: 30px;
+               }
+               .size{
+                   line-height: 15px;
+               }
+           }
+       }
+       .rental__right{
+           margin: 70px 0 0 50px;
+           h2{
+               margin-bottom: 50px;
+           }
+           .topForm{
+            input,
+            textarea {
+                border: none;
+               // background: $yellow-cl;
+                outline: none;
+                line-height: 20px;
+                
+              
+            }
+               display: flex;
+               
+               .rental-form{
+                   margin-bottom: 15px;
+                  
+               }
+               .companyAddress{
+                   position: relative;
+                textarea{
+                    
+                    outline: none;
+                    resize: none;
+                    
+                }
+                .line1{
+                    position: absolute;
+                    top: 39px;
+                    left: 0;
+                }
+               }
+               .topForm-left{
+                   margin-right: 80px;
+               }
+               
+           }
+       }
+   }
+}

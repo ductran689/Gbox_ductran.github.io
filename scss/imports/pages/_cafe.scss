@@ -1,0 +1,162 @@
+.cafe {
+    &__cover {
+        position: relative;
+        max-width: 100vw;
+        height: 375px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &-content {
+            position: absolute;
+            top: 60px;
+            text-align: center;
+            h3 {
+                max-width: 85px;
+                margin: 0 auto;
+                color: #fbdb01;
+                line-height: 20px;
+                &.--welcome {
+                    margin-bottom: 25px;
+                }
+                &.--white {
+                    color: #eaeae7;
+                }
+            }
+            h2 {
+                color: $yellow-cl;
+                margin-bottom: 25px;
+                letter-spacing: 4px;
+            }
+            p {
+                margin: 0 auto;
+                margin-bottom: 55px;
+                max-width: 80%;
+                color: #ebebeb;
+                font-family: Arial, Helvetica, sans-serif;
+                position: relative;
+                &::before {
+                    content: "";
+                    height: 1px;
+                    width: var(--line-width);
+                    background: $yellow-cl;
+                    @include alignMid(row);
+                    bottom: -40px;
+                }
+            }
+        }
+    }
+    .gray-bg {
+        background: $grey-bg;
+        margin-bottom: 60px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+            &-img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .picture {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: brightness(80%);
+                    -webkit-filter: brightness(80%);
+                    -moz-filter: brightness(80%);
+                    transition: .4s;
+                    &:hover {
+                        filter: brightness(100%);
+                        -webkit-filter: brightness(100%);
+                        -moz-filter: brightness(100%);
+                        transform: scale(1.1);
+                        transition: .4s;
+                    }
+                }
+            }
+            .cafe-1 {
+                grid-area: 1 / 2 / 2 / 4;
+            }
+            .cafe-2 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            .cafe-3 {
+                grid-area: 2 / 3 / 3/ 4;
+            }
+            .cafe-4 {
+                grid-area: 1 / 1 / 3 / 2;
+            }
+        }
+        .pre-next {
+            justify-content: flex-end;
+            padding: 20px 0 40px 0;
+            a {
+                color: $yellow-cl;
+            }
+
+            .next {
+                border-left: 1px solid $yellow-cl;
+            }
+            .black-details {
+                display: none;
+            }
+            .yellow-details {
+                display: block;
+            }
+        }
+    }
+    .white-bg {
+        text-align: center;
+        margin-bottom: 60px;
+        h3 {
+            margin-bottom: 30px;
+        }
+        p {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* ------------responsive------------ */
+@include xxs {
+    .cafe {
+        --line-width: 80%;
+        &__cover {
+            height: 425px;
+            &-content {
+                p {
+                    &::before {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+        .gray-bg {
+            .gallery {
+                display: block;
+                &-img {
+                    height: 200px;
+                    width: 100vw;
+                    padding: 0 20px;
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+            .pre-next {
+                justify-content: center;
+            }
+        }
+        .white-bg {
+            p {
+                width: 90%;
+            }
+        }
+    }
+}

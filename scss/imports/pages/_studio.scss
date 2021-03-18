@@ -1,0 +1,93 @@
+main {
+    .studio {
+        
+        margin:70px 0 100px 0;
+       // background: #000;
+        &__thumpnails {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+            grid-column-gap: 15px;
+            grid-row-gap: var(--grid-row-gap);
+            &-1 {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            &-2 {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            &-3 {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            &-4 {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+        }
+    }
+
+    
+}
+/* ========================================================== */
+/*                               responsive                   */
+/* ========================================================== */
+
+/* ------------991px----- */
+@include sm{
+    .studio{
+        --content-yellow:100px;
+        --height-img-studio:200px;
+        &__thumpnails{
+            grid-row-gap: 40px;
+        }
+        .thumpnail-content{
+            
+            .content-white{
+                justify-content: space-between;
+                .white-left{
+                    margin-left:10px ;
+                    width: 600%;
+                }
+            }
+        }
+    }
+}
+
+/* ----------767px-------- */
+@include xs{
+    .studio{
+        --grid-row-gap:40px;
+    }
+}
+
+/* -------------------500-->400px------------- */
+@include xxs{
+    main{
+        .studio{
+            --height-img-studio:300px;
+            &__thumpnails{
+                display: block;
+                .thumpnail{
+                    &:not(:last-child){
+                        margin-bottom: 40px;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
+/* ----------------400->320------- */
+@include maxW(400px){
+    .studio{
+        --content-yellow:70px;
+        &__thumpnails{
+           
+            .thumpnail{
+              .items-img{
+                  height: 200px;
+              }  
+                
+            }
+        }
+    }
+}

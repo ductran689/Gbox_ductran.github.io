@@ -1,0 +1,40 @@
+// css footer
+footer{
+    background: $yellow-cl;
+    .container{
+        height: 268px;
+        position: relative;
+        .footer__content{
+            display: inline-block;
+            @include alignMid(row);
+            top: 10%;
+            text-align: center;
+            .uparrow{
+                img{
+                    height: 25px;
+                    margin-bottom: 25px;
+                }
+               
+            }
+            p{
+                text-transform: uppercase;
+                font-size: 10px;
+                font-family: pr;
+                color: $text-black-cl;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+/* ================responsive============== */
+@include xxs{
+    footer{
+        .container{
+            .footer__content{
+                top:50px;
+                width: 100%;
+            }
+        }
+    }
+}

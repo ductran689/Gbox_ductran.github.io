@@ -1,0 +1,355 @@
+// CSS HOMEPAGE
+main {
+    /* ====================================================== */
+    /*                   Welcome                              */
+    /* ====================================================== */
+
+    .welcome {
+        .container {
+            position: relative;
+        }
+        &__title3 {
+            text-align: center;
+            margin: auto;
+            width: 80px;
+            line-height: 22px;
+        }
+        &__title2 {
+            /*  width: 16.12%;
+            @include midflex; */
+            @include alignMid(row);
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+            margin: 30px 0 20px 0;
+            position: relative;
+            z-index: 10;
+
+            color: $text-title-2;
+            &::after {
+                content: "";
+                height: 100%;
+                width: 100%;
+                background: #ffde00;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                z-index: -1;
+            }
+        }
+        &__desc {
+            margin: auto;
+            margin-bottom: 60px;
+            margin-top: 0;
+            width: 80%;
+            text-align: center;
+            line-height: 22px;
+            letter-spacing: 0.25px;
+            position: relative;
+            &::before {
+                content: "";
+                width: 320px;
+                height: 0.7px;
+                @include alignMid(row);
+                background: #000;
+
+                bottom: -58px;
+            }
+        }
+    }
+
+    /* ====================================================== */
+    /*                   Projects                              */
+    /* ====================================================== */
+    .project {
+        margin-bottom: var(--mar-bot-pro);
+        margin-top: 80px;
+        &__menu {
+            height: 50px;
+            margin-bottom: 20px;
+            ul {
+                height: 100%;
+                width: 30%;
+                display: flex;
+                text-align: center;
+                margin: auto;
+
+                //position: relative;
+                li {
+                    text-align: center;
+                    margin: auto;
+                    a {
+                        padding: 20px 20px;
+                        
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-family: ps;
+                        color: $text-menu;
+                        position: relative;
+                        &.active {
+                            color: $text-black-cl;
+                        }
+                        &:hover {
+                            color: $text-black-cl;
+                        }
+                        @include hoverrun(12px);
+                    }
+                }
+            }
+        }
+        .row-2 {
+            margin-top: var(--mar-btw-row);
+        }
+        /*  .row-1 {
+            display: flex;
+            justify-content: space-between;
+            .project__row-item {
+                width: 32%;
+                .project-img {
+                    width: 100%;
+                    height: var(--height-img-frame);
+
+                    a {
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .project-content {
+                    text-align: center;
+                    margin-top: 40px;
+                    .project-title {
+                        position: relative;
+                        margin-bottom: var(--mar-title-bot);
+                        font-family: pb;
+                        color: $text-black-cl;
+                        letter-spacing: 0;
+                        &:before {
+                            content: "";
+                            @include alignMid(row);
+                            bottom: -80%;
+                            height: 2px;
+                            width: 15px;
+                            background: $yellow-cl;
+                        }
+                    }
+                    .project-desc {
+                        line-height: 20px;
+                        font-size: 12px;
+                        font-family: ps;
+                        color: $text-black-cl;
+                        span {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        } */
+    }
+    /* ====================================================== */
+    /*                   page bottom white                  */
+    /* ====================================================== */
+    .pagebtm1 {
+        position: relative;
+        .btm-content {
+            padding-bottom: 10px;
+            .email{
+                margin-bottom: 25px;
+            }
+        }
+        .allwork__btn {
+            margin-bottom: 76px;
+
+            a {
+                /* display: flex;
+                flex-direction: column;
+                text-align: center; */
+                display: block;
+                @include alignMid(row);
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $text-black-cl;
+                font-size: $fz-text;
+                font-family: pb;
+                line-height: 30px;
+            }
+            .downarrow {
+                display: inline-block;
+                img {
+                    width: 15px;
+                    @include alignMid(row);
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &__line {
+            img {
+                width: 100%;
+                height: 0.5px;
+            }
+        }
+        
+    }
+
+    /* ====================================================== */
+    /*                   page bottom yellow                  */
+    /* ====================================================== */
+    .pagebtm2 {
+        background: $yellow-cl;
+        img {
+            width: 100%;
+        }
+        &__content {
+            padding-top: var(--pad-top-btm2);
+            &-left{
+                margin-top: 10px;
+            }
+            &-right {
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+                .half-left {
+                    width: 48%;
+                }
+                .half-right {
+                    width: 48%;
+                    position: relative;
+                    form {
+                        textarea{
+                            resize: none;
+                        }
+                        .message {
+                            position: relative;
+
+                            .line1,
+                            .line2 {
+                                position: absolute;
+                                left: 0;
+                            }
+                            .line1 {
+                                top: 45px;
+                                height: 0.5px;
+                            }
+                            .line2 {
+                                top: 77px;
+                            }
+                        }
+                    }
+                    .form-btn {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ====================================================== */
+    /*                   Responsive                           */
+    /* ====================================================== */
+    /* -----------991px--------- */
+    @include sm {
+    }
+
+    /* -----------767px--------- */
+    @include xs {
+        .welcome {
+            &__title2 {
+                margin: 30px 0;
+            }
+        }
+    }
+
+    /* -----------576px--------- */
+    @include xxs {
+        main{
+
+        }
+        
+        .welcome {
+            .container {
+                width: 100vw;
+            }
+            &__desc {
+                display: none;
+            }
+            &__title2 {
+                letter-spacing: 3px;
+            }
+        }
+        .project {
+            --height-img-frame:300px;
+            .container {
+                width: 100vw;
+            }
+            --mar-btw-row: 0;
+            margin-top: 0;
+            &__menu {
+                display: none;
+            }
+            .project__row {
+                flex-direction: column;
+                align-items: center;
+                &-item {
+                    width: 100%;
+                    .project-img {
+                        margin-top: 50px;
+                       // max-height: var(--height-img-frame);
+                    }
+                }
+            }
+            .row-2 {
+                display: none;
+            }
+        }
+        .pagebtm1 {
+            &__content {
+                display: block;
+                text-align: center;
+                .btm-content {
+                    width: 100%;
+                    padding-bottom: 0;
+                    .email{
+                        margin-bottom: 0;
+                    }
+                }
+                &-right {
+                    display: none;
+                }
+            }
+        }
+        .pagebtm2 {
+            --pad-top-btm2:0;
+            display: block;
+            text-align: center;
+            background: $white-cl;
+            .btm-content {
+                width: 100%;
+            }
+            &__content {
+                margin-bottom: 30px;
+                &-right {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+
+    /* -----------370px--------- */
+    @include maxW(370px) {
+        .project {
+            --height-img-frame:200px;
+            &__row {
+                &-item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

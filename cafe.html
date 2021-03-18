@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Grunt CFD</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: 'dc';
+            src: url('../fonts/D-DINCondensed.woff2') format('woff2'),
+                url('../fonts/D-DINCondensed.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'db';
+            src: url('../fonts/D-DINCondensed-Bold.woff2') format('woff2'),
+                url('../fonts/D-DINCondensed-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        /* FONT FACE - font-display: fallback; */
+        @font-face {
+            font-family: 'pth';
+            src: url('../fonts/ProximaNova-Thin.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Thin.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: 'pl';
+            src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'ps';
+            src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Semibold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'pb';
+            src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'peb';
+            src: url('../fonts/ProximaNovaA-Extrabld.woff2') format('woff2'),
+                url('../fonts/ProximaNovaA-Extrabld.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'pr';
+            src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+                url('../fonts/ProximaNova-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+    </style>
+
+<header>
+    <div class="header__logo">
+        <a href="./index.html"><img src="img/Asset 1.svg" alt="logo" class="gbox-logo"></a>
+        <h1>Gbox</h1>
+        <a href="">
+            <img src="img/001-facebook.svg" alt="fblogo" class="fblogo">
+        </a>
+        <div class="nav">
+            <span></span>
+        </div>
+    </div>
+    <div class="header__under">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__menu-about">
+                    <a href="" class="menu-text about"> about</a>
+                </div>
+                <div class="header__menu-options">
+                   
+                    <a href="./studio.html" class="menu-text studio">Studio</a>
+                    <a href="#rental" class="menu-text rental">Rental</a>
+                    <a href="./cafe.html" class="menu-text cafe">Cafe</a>
+                    <a href="./allworks.html" class="menu-text work">Work</a>
+                    
+                </div>
+                <div class="header__menu-contact">
+                    <a href="" class="menu-text contact">contact</a>
+                </div>
+
+
+            </div>
+
+            <img src="img/long-line.png" alt="">
+
+        </div>
+    </div>
+    
+
+
+</header>
+<!-- ============================================ -->
+    <!--                      nav  bar                    -->
+    <!-- ============================================ -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__content">
+                <a href="" class="menu-text">about</a>
+                <a href="" class="menu-text">Rental</a>
+                <a href="./studio.html" class="menu-text">Studio</a>
+                <a href="./cafe.html" class="menu-text">Cafe</a>
+                <a href="./allworks.html" class="menu-text">Work</a>
+                <a href="./" class="menu-text">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------------------ -->
+    <!--                    main               -->
+    <!-- ------------------------------------ -->
+    <main>
+
+        <!-- ------------------------------------ -->
+        <!--                    cafe             -->
+        <!-- ------------------------------------ -->
+        <section class="cafe">
+            <div class="cafe__cover">
+                <img src="img/cafe-cover.jpg" alt="">
+               <div class="cafe__cover-content">
+                    <h3 class="title-3 --welcome">welcome to</h3>
+                    <h2 class="title-2">Gbox coffee</h2>
+                    <p class="text-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates
+                        
+                        , laborum tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur ex eaque natus nostrum voluptatum doloribus cum quas ad aperiam. Nisi et neque
+                        aspernatur non, 
+                    </p>
+ 
+                    <h3 class="title-3 --white">gallery</h3>
+                </div>
+            </div>
+            <div class="gray-bg">
+                <div class="container">
+                    <!-- <div class="gallery">
+                        <div class="gallery-img cafe-1">
+                            <img src="img/cafe-1.jpg" alt="" class="picture ">
+                        </div>
+                        <div class="gallery-img cafe-2">
+                            <img src="img/cafe-2.jpg" alt="" class="picture">
+                        </div>
+                        <div class="gallery-img cafe-3">
+                            <img src="img/cafe-3.jpg" alt="" class="picture ">
+                        </div>
+                        <div class="gallery-img cafe-4">
+                            <img src="img/cafe-4.jpg" alt="" class="picture ">
+                        </div>
+                        
+                    </div> -->
+                    <div class="gallery" itemscope data-pswp-uid="1">
+                        <figure class="gallery-img cafe-1">
+                            <a href="img/cafe-1.jpg" data-size="729x281 ">
+                            <img src="img/cafe-1.jpg" alt="" class="picture"></a>
+                        </figure>
+                        <figure class="gallery-img cafe-2">
+                            <a href="img/cafe-2.jpg" data-size="333x245 ">
+                            <img src="img/cafe-2.jpg" alt="" class="picture"></a>
+                        </figure>
+                        <figure class="gallery-img cafe-3">
+                            <a href="img/cafe-3.jpg" data-size="331x251 ">
+                            <img src="img/cafe-3.jpg" alt="" class="picture"></a>
+                        </figure>
+                        <figure class="gallery-img cafe-4">
+                            <a href="img/cafe-4.jpg" data-size="349x523 ">
+                            <img src="img/cafe-4.jpg" alt="" class="picture"></a>
+                        </figure>
+                        
+                    </div>
+                   <!--  <div class="fullscreen-btn">
+                        <img src="img/fullScreen.svg" alt="">
+                        <a href="">Full Screen</a>
+                    </div> -->
+                    <div class="pre-next">
+                        <div class="pre">
+                            <img src="img/004-down-arrow-yellow.svg" alt="" class="yellow-details">
+
+
+                            <a href="" class=" hover">Previous</a>
+                        </div>
+                        <div class="next">
+                            <a href="" class=" hover">Next</a>
+                            <img src="img/004-down-arrow-yellow.svg" alt="" class="yellow-details">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="white-bg">
+                <div class="container">
+                    <h3 class="title-3">career</h3>
+                    <p class="text-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolor cupiditate explicabo
+                        recusandae unde molestiae quod voluptatibus cum totam facere aliquid aspernatur, ipsa veniam
+                        laudantium iusto quidem, sit fuga suscipit.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- ================================================================= -->
+        <!--                                page bottom white                  -->
+        <!-- ================================================================= -->
+        <section class="pagebtm1 allwork pagebtm">
+            <div class="container">
+                <!--  <div class="allwork__btn">
+                    <a href="" class="pagebtm1__btn">all works </a>
+                    <div class="downarrow"><img src="img/004-down-arrow.svg" alt=""></div>
+
+                </div> -->
+                <div class="pagebtm1__line">
+                    <img src="img/long-line.png" alt="">
+                </div>
+                <div class="pagebtm1__content btm-divide">
+                    <div class="pagebtm1__content-left btm-content">
+                        <p class="email">
+                            <br>
+                            email <br>
+                            info@goldenboxstudios.com <br>
+                        </p>
+                        <p class="tel">
+                            tel <span>+84 979 872 809</span>
+                        </p>
+                    </div>
+                    <div class="pagebtm1__content-right btm-content">
+                        <p>
+                            <br>
+                            if you have any questions <br>
+                            comments or <br>
+                            suggestion, feel free to email <br>
+                            us
+                            <br>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================================================================= -->
+        <!--                                page bottom yellow                 -->
+        <!-- ================================================================= -->
+        <section class="pagebtm2 pagebtm">
+            <div class="container">
+                <div class="pagebtm2__content btm-divide">
+                    <div class="pagebtm2__content-left btm-content">
+                        <p>
+
+                            address <br>
+                            04 bau cat district tan binh <br>
+                            ho chi minh city <br>
+                        </p>
+                    </div>
+                    <div class="pagebtm2__content-right btm-content">
+
+                        <div class="half-left">
+                            <form action="">
+                                <div class="name form-item">
+                                    <label for="name">Your Name</label> <br>
+                                    <input type="text" name="name" id="name">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="phone form-item">
+                                    <label for="phone">Phone</label> <br>
+                                    <input type="number" name="phone">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="email form-item">
+                                    <label for="email">Email</label> <br>
+                                    <input type="text" name="email">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="half-right">
+                            <form action="">
+                                <div class="subject form-item">
+                                    <label for="subject">Subject</label> <br>
+                                    <input type="text" name="subject">
+                                    <img src="img/short-line.png" alt="" class="linethin">
+                                </div>
+                                <div class="message form-item">
+                                    <label for="message">Message</label> <br>
+                                    <textarea name="message" id="" cols="" rows="3"> </textarea>
+                                    <img src="img/short-line.png" alt="" class="line1 linethin" >
+                                    <img src="img/short-line.png" alt="" class="line2 linethin">
+                                </div>
+                            </form>
+                            <div class="form-btn">
+                                <a href="javascript:void(0)" class="btn">Send</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <a href="" class="uparrow"><img src="img/002-up-arrow.svg" alt=""></a>
+                <p>2018 Gbox studio. all rights reserved</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="dest/main.js"></script>
+</body>
+
+</html>
