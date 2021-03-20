@@ -214,6 +214,9 @@
             }
             .rental__right {
                 margin: 70px 0 0 0;
+                .submitarea{
+                    width: 90%;
+                }
                 .topForm {
                     margin-bottom: 30px;
                     display: block;
@@ -279,6 +282,7 @@
                             width: 90%;
                         }
                     }
+                    
                 }
             }
         }
