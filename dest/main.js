@@ -324,5 +324,13 @@ menuText.addClass('active');
 
     initPhotoSwipeFromDOM('.gallery');
 
+
+
+    /* -------------active for rental box ----------- */
+    let boxNum =$('.number .text span').attr('class');
+  
+    let boxName =$('.'+boxNum);
+   
+    boxName.addClass('active');
 });
   

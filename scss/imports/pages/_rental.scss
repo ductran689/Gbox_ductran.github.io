@@ -1,70 +1,286 @@
-.rental{
-   .container{
-       display: flex;
-       .rental__left{
-           width: 270px;
-           height: 650px;
-           margin-top: 2px;
-           background: $grey-cl;
-           .number{
-               margin: 70px 50px 30px 20px;
-           }
-           .text-content{
-               margin-left: 20px;
-               h2,p{
-                   color: $white-cl;
-               }
-               h2{
-                   margin-bottom: 15px;
-               }
-               .dimen{
-                   line-height: 30px;
-               }
-               .size{
-                   line-height: 15px;
-               }
-           }
-       }
-       .rental__right{
-           margin: 70px 0 0 50px;
-           h2{
-               margin-bottom: 50px;
-           }
-           .topForm{
-            input,
-            textarea {
-                border: none;
-               // background: $yellow-cl;
-                outline: none;
-                line-height: 20px;
-                
-              
+.rental {
+    padding-bottom: 200px;
+    .container {
+        label{
+            font-weight: bold;
+        }
+        display: flex;
+        .rental__left {
+            width: 270px;
+            height: 650px;
+            margin-top: 2px;
+            background: $grey-cl;
+            .number {
+                margin: 70px 50px 30px 20px;
             }
-               display: flex;
-               
-               .rental-form{
-                   margin-bottom: 15px;
-                  
-               }
-               .companyAddress{
-                   position: relative;
-                textarea{
-                    
+            .text-content {
+                margin-left: 20px;
+                h2,
+                p {
+                    color: $white-cl;
+                }
+                h2 {
+                    margin-bottom: 15px;
+                }
+                .dimen {
+                    line-height: 30px;
+                }
+                .size {
+                    line-height: 15px;
+                }
+            }
+        }
+        .rental__right {
+            position: relative;
+            margin: 70px 0 0 50px;
+            input {
+                height: 35px;
+            }
+
+            h2 {
+                margin-bottom: 50px;
+            }
+            .topForm {
+                input {
+                    border: none;
+                    // background: $yellow-cl;
                     outline: none;
-                    resize: none;
-                    
+                    line-height: 20px;
+                    margin-top: 5px;
                 }
-                .line1{
-                    position: absolute;
-                    top: 39px;
-                    left: 0;
+                display: flex;
+
+                .rental-form {
+                    margin-bottom: 15px;
+
+                    width: 100%;
+                    .linethin {
+                        transform: translateY(-10px);
+                        height: 0.5px;
+                    }
                 }
-               }
-               .topForm-left{
-                   margin-right: 80px;
-               }
-               
-           }
-       }
-   }
+                .companyAddress {
+                    position: relative;
+                    textarea {
+                        margin-top: 30px;
+                        resize: none;
+                        width: 100%;
+                    }
+                }
+                .topForm-left {
+                    margin-right: 80px;
+                }
+            }
+            .rental__right-bot {
+                .booking-form {
+                    margin-top: 20px;
+                }
+                .botForm {
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        // background: $yellow-cl;
+                        width: 100%;
+                        line-height: 20px;
+                        margin-top: 5px;
+                    }
+                    &-left {
+                        .studio-select {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 30px;
+                            .box {
+                                width: 40px;
+                                height: 40px;
+                                box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+                                background: #19191a;
+                                text-decoration: none;
+                                position: relative;
+                                span {
+                                    color: #b4b4b4;
+                                    text-decoration: none;
+                                    @include alignMid;
+                                    font-family: db;
+                                    font-size: 24px;
+                                }
+                                &.active {
+                                    background: $yellow-cl;
+                                    span {
+                                        color: $text-black-cl;
+                                    }
+                                }
+                            }
+                        }
+                        margin-right: 80px;
+                        width: 44%;
+                    }
+                    &-right {
+                        width: 44%;
+                        margin-top: 50px;
+                        .lightingRequirement {
+                            .note {
+                                padding-right: 20px;
+                                margin-top: 10px;
+                                font-family: pr;
+                                font-style: italic;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    textarea {
+                        margin-top: 30px;
+                        resize: none;
+                        width: 100%;
+                    }
+                }
+            }
+            &-final {
+                .bookingDu {
+                    .duration {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .rightarr {
+                            width: 20px;
+                            transform: rotate(180deg);
+                        }
+                        .downarr{
+                            width: 20px;
+                            display: none;
+                        }
+                        input {
+                            width: 44%;
+                        }
+                    }
+                }
+                input {
+                    width: 100%;
+                    margin: 20px 0 30px 0;
+                }
+            }
+            .submitarea {
+                position: absolute;
+                left: 0;
+                width: 50%;
+                bottom: -150px;
+                display: flex;
+                justify-content: space-between;
+                .book-btn {
+                    margin: unset;
+                }
+                p {
+                    width: 60%;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =======respinsive========= */
+
+@include xs {
+    .rental {
+        .container {
+            margin: 0 15px 0 15px;
+            display: block;
+            .rental-form {
+                .linethin {
+                    width: 90%;
+                }
+            }
+            .rental__left {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: unset;
+                background: unset;
+                .number {
+                    margin: unset;
+                }
+                .text-content {
+                    width: 50%;
+                    h2,
+                    p {
+                        color: $text-black-cl;
+                    }
+                }
+            }
+            .rental__right {
+                margin: 70px 0 0 0;
+                .topForm {
+                    margin-bottom: 30px;
+                    display: block;
+
+                    &-left {
+                        margin-right: unset !important;
+                    }
+                    .companyAddress {
+                        textarea {
+                            width: 90%;
+                        }
+                    }
+                }
+                &-bot {
+                    .botForm {
+                        display: block !important;
+                        width: 100%;
+                        &-left {
+                            width: 100% !important;
+                            .studio-select {
+                                width: 70%;
+                            }
+                            .cateringRequire {
+                                textarea {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                        &-right {
+                            width: 100% !important;
+                            .lightingRequirement {
+                                margin-bottom: 30px;
+                                textarea {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-final{
+                    .bookingDu{
+                        .duration{
+                            flex-direction: column;
+                            .downarr{
+                                display: block;
+                            }
+                            .rightarr{
+                                display: none;
+                            }
+                            input{
+                                width: 90%;
+                                margin-right: 45px;
+                            }
+                        }
+                    }
+                    .projectRef{
+                        input{
+                            width: 90%;
+                        }
+                    }
+                    .hearabout{
+                        input{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
